@@ -18,12 +18,7 @@ public class ConcreteIterator implements Iterator {
 
     @Override
     public Object next() {
-        if (hasNext()) {
-            return list.get(++index);
-        } else {
-            return null;
-        }
-
+        return hasNext() ? list.get(++index) : null;
     }
 
     @Override
@@ -34,6 +29,6 @@ public class ConcreteIterator implements Iterator {
 
     @Override
     public boolean hasNext() {
-        return index < list.size() -1;
+        return index < list.size() - 1;
     }
 }
