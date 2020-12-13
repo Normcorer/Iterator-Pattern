@@ -5,7 +5,7 @@ import xyz.molzhao.Iterator;
 import java.util.List;
 
 /**
- * 具体迭代器实现类
+ * 具体迭代器实现类：实现抽象迭代器接口中所定义的方法，完成对聚合对象的遍历，记录遍历的当前位置。
  */
 public class ConcreteIterator implements Iterator {
     private List<Object> list;
